@@ -32,21 +32,21 @@ var savviCommands = {
         .expect.element('@solForVar').text.to.contain('Organizational Documents')
         return this
 },
-    sideFor: function() {
+    entity: function() {
       this
-        .click('@sideFor')
+        .click('@entity')
         .expect.element('@solForVar').text.to.contain('Organizational Documents')
         return this
     },
-    sideFun: function() {
+    TE: function() {
       this
-      .click('@sideFun')
+      .click('@TE')
       .expect.element('@funVar').text.to.contain('The legal service you need')
       return this
     },
-    sideLaunch: function() {
+    counsel: function() {
       this
-      .click('@sideLaunch')
+      .click('@counsel')
     .expect.element('@launchVar').text.to.contain('All the essentials to protect yourself')
     return this
   },
@@ -88,12 +88,12 @@ module.exports = {
        solTe: '#comp-jkvmmx8xmoreContainer2label',
        solFin: '#comp-jkvmmx8xmoreContainer1label',
        solFor: '#comp-jkvmmx8xmoreContainer0label',
-       sideFor: '#comp-joj6kk9nlink',
-       sideFun: '#comp-joj916sflink',
+       entity: '#comp-jsm8009qlabel',
+       TE: '#comp-jorrmdu0label',
        funVar: '#comp-jp4g7ulzinlineContent',
-       sideLaunch: '#comp-joj91d4zlink',
+       counsel: '#comp-jorrmunvlabel',
        launchVar: '#comp-jp4khu04inlineContent',
-       sideTG: '#comp-joj91izwlink',
+       sideTG: '#comp-jorrmr7nlabel',
        TGvar: '#comp-jp4m2o63inlineContent',
        partners: '#comp-j9suf0qilabel',
        PartVar: '#comp-j9srqvrzinlineContent',
@@ -107,8 +107,20 @@ module.exports = {
        topLogin: '#comp-jdxicelelabel',
         LEmail: 'input[name="email"',
         LPass: 'input[name="password"',
+        forPass: 'div[class="help-block text--right"]',
+        forEmail: 'input[name="email"]',
        loginVar: '.form__heading',
-       topPlans: '#comp-j9suf0qi',
-       plansVar: '#comp-jrqyrvn1inlineContent',
+       topPlans: '#comp-j8kufrp1label',
+       plansVar: '#comp-jtge4i1olink',
+       createAcct: '#comp-johqnyg0link',
+        acctFName: 'input[name="firstName"]',
+        acctLName: 'input[name="lastName"]',
+        acctEmail: 'input[name="email"]',
+        acctPass: 'input[name="password"]',
+        acctTerm: 'input[type="checkbox"',
+        entity: '#comp-joots2o1',
+        TE: '#comp-jootxosd',
+        counsel: '#comp-jsm4jq1j',
+        Fundraising: '#comp-joou0prj'
       }
     }
